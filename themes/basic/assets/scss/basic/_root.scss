@@ -1,0 +1,83 @@
+
+::selection {
+  background: $primary-soft;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+.btn:active:focus {
+  outline: none;
+}
+
+@mixin outline {
+  outline-color: #4d90fe;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.no-focus {
+  *[tabindex]:not(.disabled):focus {
+    outline: none !important;
+  }
+}
+
+*[tabindex]:not(.disabled):focus {
+  @include outline;
+}
+input[tabindex]:focus,
+textarea[tabindex]:focus {
+  outline: none !important;
+}
+*[tabindex]:not(.disabled):active,
+*[tabindex]:not(.disabled):active:focus {
+  outline: none;
+}
+*[tabindex].disabled:focus {
+  outline: none;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+hr {
+  margin: 4rem 0;
+  border: none;
+  border-bottom: 1px solid $gray-100;
+}
+
+.page-frame .page-content {
+  scroll-behavior: auto;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
