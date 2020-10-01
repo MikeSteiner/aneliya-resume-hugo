@@ -1,0 +1,22 @@
+{
+  "name": "hugo-basic-theme",
+  "version": "1.0.0",
+  "description": "Basic Theme for Hugo",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "hugo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeSteiner/hugo-basic-theme.git"
+  },
+  "author": "MikeSteiner",
+  "license": "MIT",
+  "homepage": "https://github.com/MikeSteiner/hugo-basic-theme"
+}

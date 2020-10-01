@@ -1,3 +1,19 @@
-@import "vendor/bootstrap/bootstrap";
+// Import bootstrap styles
+//@import "vendor/bootstrap/bootstrap";
+//@import "bootstrap";
+//@import "./bootstrap/bootstrap.scss";
+@import "bootstrap/scss/bootstrap";
 @import "bootstrap_variables";
+
+// Import fontawesome
+//@import "./fontawesome/fontawesome.scss";
+//@import "./fontawesome/brands.scss";
+//@import "./fontawesome/regular.scss";
+//@import "./fontawesome/solid.scss";
+$fa-font-path: "../webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+//@import "@fortawesome/fontawesome-free/scss/brands";
+
+// Import theme styles
 @import "basic/basic";
